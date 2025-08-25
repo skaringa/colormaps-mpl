@@ -1,42 +1,17 @@
-# Processing Library Template
+# ColorMaps from matplotlib
 
-The Processing Library Template is a template to help developers of Processing libraries to develop and release.
-It can be found on Github at [https://github.com/processing/processing-library-template](https://github.com/processing/processing-library-template).
+## Purpose
 
-![example sketch output](./example_sketch_output.png)
+The goal of this project is to provide a Processing library containing the color maps from Python's matplotlib.
 
-This documentation provides information on
+Colormaps convert numerical values into colors. They are widely used to display measurements or statistical data in a way that's easy for humans to understand, but they are also extremely useful for creating beautiful, computed pictures.
 
-1. [Getting started](getting-started.md)
-2. [The development process](develop)
-3. [Releasing your library](release)
-4. [Troubleshooting](troubleshooting.md)
+Creating effective and aesthetically pleasing colormaps is a difficult task. Fortunately, many have already invested significant effort into this and have published their work in the public domain. The [colormaps included in Python's matplotlib](https://matplotlib.org/stable/gallery/color/colormap_reference.html) are a great example of this.
 
-!!! note
-    This template is based on Gradle. If you are looking for the old Ant-based template, see processing/processing-library-template-ant
+## Contents
 
-## References 
-Existing references for developing libraries for Processing can be found on the following Github wiki pages:
+1. [Installation](installation.md)
+2. [Usage](usage.md)
+3. [Reference](reference.md)
+3. [Contributors](contributors.md)
 
-- [https://github.com/processing/processing4/wiki/Library-Basics](https://github.com/benfry/processing4/wiki/Library-Basics)
-- [https://github.com/processing/processing4/wiki/Library-Guidelines](https://github.com/benfry/processing4/wiki/Library-Guidelines)
-- [https://github.com/processing/processing4/wiki/Library-Overview](https://github.com/benfry/processing4/wiki/Library-Overview)
-
-
-## Contributors
-
-This template was created as part of the 2024 New Beginnings (pr05) Grant from the
-[Processing Foundation](https://github.com/processing), to simplify the
-workflows for libraries, tools, and modes, mentored by [@Stefterv](https://github.com/stefterv).
-
-It is based on and inspired by a number of Processing library templates, including:
-
-- [https://github.com/processing/processing-library-template-gradle](https://github.com/processing/processing-library-template-gradle)
-- [https://github.com/enkatsu/processing-library-template-gradle](https://github.com/enkatsu/processing-library-template-gradle)
-- [https://github.com/hamoid/processing-library-template/](https://github.com/hamoid/processing-library-template/)
-
-I wish to thank the developers of these repositories, who generously provided
-guidance and time. This template has been developed in collaboration with
-[@enkatsu](https://github.com/enkatsu).
-
-The example library was developed by Stig Møller Hansen ([@stixan](https://github.com/stixan)).

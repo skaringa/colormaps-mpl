@@ -10,6 +10,7 @@ void setup() {
   size(1000, 1000);
 
   noStroke();
+  background(190, 190, 190);
   noLoop();  // Run once and stop
 }
 

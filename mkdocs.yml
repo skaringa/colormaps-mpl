@@ -1,5 +1,5 @@
-site_name: Processing Library Template
-site_url: "https://processing.github.io/processing-library-template/"
+site_name: ColorMaps from Matplotlib for Processing
+site_url: "https://skaringa.github.io/colormaps-mpl/"
 
 theme:
   name: material
@@ -27,7 +27,7 @@ plugins:
 
 nav:
   - Home: index.md
-  - Get Started: getting-started.md
-  - Develop: develop.md
-  - Release: release.md
-  - Troubleshooting: troubleshooting.md
+  - Installation: installation.md
+  - Usage: usage.md
+  - Reference: reference.md
+  - Contributors: contributors.md

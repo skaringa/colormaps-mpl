@@ -1,43 +1,38 @@
-# Processing Library Template
-This is a template to help developers of Processing libraries to develop and release.
+# ColorMaps from matplotlib
 
-Please read the [documentation website](https://processing.github.io/processing-library-template/)
-for more information on how to use this template.
+## Purpose
 
-Three important outputs are required to contribute a library to Processing, and this template provides 
-help and guidance on them. They are:
-1. **The library's code** - This template will build your code into a jar file with Gradle.
-2. **A website for the library** - We recommend using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
-   to create a static website for your library. It allows you to write content for your website
-   using markdown, and structure the site using a yml configuration file. We provide a skeleton
-   MkDocs website as part of this template.
-3. **A url that serves the release artifacts** - We have already configured Gradle tasks to create the
-   release artifacts. If you host your code on Github, You can create a Github release that serves the 
-   release artifacts.
+The goal of this project is to provide a Processing library containing the color maps from Python's matplotlib.
 
+Colormaps convert numerical values into colors. They are widely used to display measurements or statistical data in a way that's easy for humans to understand, but they are also extremely useful for creating beautiful, computed pictures.
 
-References for developing libraries for Processing can be found on the following Github wiki pages:
-- https://github.com/processing/processing4/wiki/Library-Basics
-- https://github.com/processing/processing4/wiki/Library-Guidelines
-- https://github.com/processing/processing4/wiki/Library-Overview
+Creating effective and aesthetically pleasing colormaps is a difficult task. Fortunately, many have already invested significant effort into this and have published their work in the public domain. The [colormaps included in Python's matplotlib](https://matplotlib.org/stable/gallery/color/colormap_reference.html) are a great example of this.
 
-> [!Note]
-> This template is based on Gradle. If you are looking for the old Ant-based template, see [processing/processing-library-template-ant](https://github.com/processing/processing-library-template-ant)
+![Colormap reference](./docs/colormaps-reference.png)
 
+## Basic Usage
 
-## Contributors
+    // Import the library
+    import de.kompf.colormapsmpl.*;
 
-This template was created by Claudine Chen ([@mingness](https://github.com/mingness)) as part of the 2024 New Beginnings (pr05) Grant from the 
-[Processing Foundation](https://github.com/processing), to simplify the
-workflows for libraries, tools, and modes, mentored by Stef Tervelde ([@Stefterv](https://github.com/stefterv)).
+    // Instantiate the colormap registry
+    ColorMapRegistry creg = new ColorMapRegistry();
 
-It is based on and inspired by a number of Processing library templates, including:
-- https://github.com/processing/processing-library-template-gradle
-- https://github.com/enkatsu/processing-library-template-gradle
-- https://github.com/hamoid/processing-library-template/
+    // Register colormap categories
+    creg.registerCategorySequential();
 
-I wish to thank the developers of these repositories, who generously provided
-guidance and time. This template has been developed in collaboration with
-[@enkatsu](https://github.com/enkatsu).
+    // Retrieve a color map by its name
+    ColorMap cmap = creg.getColorMap("Blues");
 
-The example library was developed by Stig Møller Hansen ([@stixan](https://github.com/stixan)).
+    // Retrieve and use the colors
+    int color = cmap.getColor(0);
+    fill(color);
+
+## Installation and reference
+
+See detailed [documentation](./docs/index.md).
+
+## Examples
+
+1. [ColorMapsReference](./examples/ColorMapsReference/ColorMapsReference.pde)
+2. [Circles](./examples/Circles/Circles.pde)
