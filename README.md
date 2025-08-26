@@ -30,7 +30,7 @@ Creating effective and aesthetically pleasing colormaps is a difficult task. For
 
 ## Installation and reference
 
-See detailed [documentation](./docs/index.md).
+See detailed [documentation](https://skaringa.github.io/colormaps-mpl/).
 
 ## Examples
 
