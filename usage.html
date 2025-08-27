@@ -359,7 +359,7 @@
 <p><strong>Instantiate the colormap registry:</strong></p>
 <pre><code>ColorMapRegistry creg = new ColorMapRegistry();
 </code></pre>
-<p><strong>Register one or multiple colormap categories that you want:</strong></p>
+<p><strong>Register one or multiple colormap categories:</strong></p>
 <pre><code>creg.registerCategorySequential();
 
 creg.registerCategorySequential2();
@@ -381,7 +381,7 @@ creg.registerCategoryCyclic();
 <p><strong>Retrieve a color map by its name:</strong></p>
 <pre><code>ColorMap cmap = creg.getColorMap("Blues");
 </code></pre>
-<p>For a reference of all names see the picture above. All names that are currently registered in the ColorMapRegistry may be retrieved with:</p>
+<p>For a reference of all names see this <a href="reference.html">reference</a>. All names that are currently registered in the ColorMapRegistry may be retrieved with:</p>
 <pre><code>creg.getAllNames();
 </code></pre>
 <p><strong>Retrieve and use the colors:</strong></p>
