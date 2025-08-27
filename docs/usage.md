@@ -8,7 +8,7 @@
 
     ColorMapRegistry creg = new ColorMapRegistry();
 
-**Register one or multiple colormap categories that you want:**
+**Register one or multiple colormap categories:**
 
     creg.registerCategorySequential();
   
@@ -34,7 +34,7 @@ For a deeper explanation of the colormaps, see [Choosing Colormaps in Matplotlib
 
     ColorMap cmap = creg.getColorMap("Blues");
 
-For a reference of all names see the picture above. All names that are currently registered in the ColorMapRegistry may be retrieved with:
+For a reference of all names see this [reference](reference.md). All names that are currently registered in the ColorMapRegistry may be retrieved with:
 
     creg.getAllNames();
 
