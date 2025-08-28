@@ -15,3 +15,6 @@ Creating effective and aesthetically pleasing colormaps is a difficult task. For
 3. [Reference](reference.md)
 3. [Contributors](contributors.md)
 
+---
+
+![Colormap reference](./colormaps-reference.png)

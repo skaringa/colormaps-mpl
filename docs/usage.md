@@ -44,7 +44,15 @@ To retrieve the color for value **val**:
 
     int color = cmap.getColor(val);
 
-Take care to map your data range into the number of available colors, e.g.
+The argument **val** must no exceed the range of ```0``` to ```cmap.size()-1```. For most colormaps, this is the range from 0 to 255 (inclusive). However, colormaps from the _Qualitative_ category often have fewer colors, so be sure to use Processing's  ```map``` function to map your data range to the number of available colors..
 
+The result is a 32-bit value ordered as AAAAAAAARRRRRRRRGGGGGGGGBBBBBBBB, which can be fed directly into Processing's ```fill```, ```stroke``` or ```background``` functions, if the default **RGB** color model is active.
+
+**Example usage:**
+
+For example, if we have a variable ```val``` with values in the range ```minVal..maxVal``` and want to represent this variable as a fill color, we would use:
+
+    colorMode(RGB); // can be omitted as this is the default setting
+    
     int icol = (int)map(val, minVal, maxVal, 0, cmap.size()-1);
     fill(cmap.getColor(icol));
