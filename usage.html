@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
     
     
       
@@ -388,7 +388,8 @@ creg.registerCategoryCyclic();
 <p>To retrieve the color for value <strong>val</strong>:</p>
 <pre><code>int color = cmap.getColor(val);
 </code></pre>
-<p>The argument <strong>val</strong> must no exceed the range of <code>0</code> to <code>cmap.size()-1</code>. For most colormaps, this is the range from 0 to 255 (inclusive). However, colormaps from the <em>Qualitative</em> category often have fewer colors, so be sure to use Processing's  <code>map</code> function to map your data range to the number of available colors..</p>
+<p>The argument <strong>val</strong> must no exceed the range of <code>0</code> to <code>cmap.size()-1</code>. For most colormaps, this is the range from 0 to 255 (inclusive). However, colormaps from the <em>Qualitative</em> category often have fewer colors.
+It is recommended to use Processing's  <code>map</code> function to map your data range to the number of available colors.</p>
 <p>The result is a 32-bit value ordered as AAAAAAAARRRRRRRRGGGGGGGGBBBBBBBB, which can be fed directly into Processing's <code>fill</code>, <code>stroke</code> or <code>background</code> functions, if the default <strong>RGB</strong> color model is active.</p>
 <p><strong>Example usage:</strong></p>
 <p>For example, if we have a variable <code>val</code> with values in the range <code>minVal..maxVal</code> and want to represent this variable as a fill color, we would use:</p>
