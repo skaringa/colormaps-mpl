@@ -14,8 +14,8 @@ The Javadoc documentation is included in the distribution's ZIP file. Once the l
 
 The source code and examples are also part of the distribution. You can find the examples directly in the IDE by going to  **File** > **Examples...**
 
-## Github repository
+## GitHub repository
 
-https://github.com/skaringa/colormaps-mpl
+[https://github.com/skaringa/colormaps-mpl](https://github.com/skaringa/colormaps-mpl)
 
 

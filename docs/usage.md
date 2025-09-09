@@ -44,7 +44,8 @@ To retrieve the color for value **val**:
 
     int color = cmap.getColor(val);
 
-The argument **val** must no exceed the range of ```0``` to ```cmap.size()-1```. For most colormaps, this is the range from 0 to 255 (inclusive). However, colormaps from the _Qualitative_ category often have fewer colors, so be sure to use Processing's  ```map``` function to map your data range to the number of available colors..
+The argument **val** must no exceed the range of ```0``` to ```cmap.size()-1```. For most colormaps, this is the range from 0 to 255 (inclusive). However, colormaps from the _Qualitative_ category often have fewer colors.
+It is recommended to use Processing's  ```map``` function to map your data range to the number of available colors.
 
 The result is a 32-bit value ordered as AAAAAAAARRRRRRRRGGGGGGGGBBBBBBBB, which can be fed directly into Processing's ```fill```, ```stroke``` or ```background``` functions, if the default **RGB** color model is active.
 
